@@ -1,0 +1,101 @@
+@import url(reset.css);
+
+body{
+    background-image: url(images/knitting250px.png);
+    font-family: 'Gentium Book Basic', serif;    font-weight:bold;
+
+
+}
+
+.item{
+	height:auto;
+    margin: 5px;
+    text-align:center;
+    position:relative;
+    display:inline-block;
+}
+
+nav{
+    width:100%;
+}
+nav ul{ 
+    display: inline-table;
+    list-style-type: none;
+    margin:5px 20px;
+ }
+
+
+nav ul li{
+ float: left;
+ font-size:3em;
+ padding:10px;
+ color:white;
+}
+
+
+
+nav ul li:hover{
+    color:grey;
+}
+
+.grid-image img{
+    width: 100%;
+	border-radius:50%;
+}
+
+.item:hover img{
+	opacity:.1;
+}
+
+.bg {
+  background: url('images/kale-bg.jpg') ;
+  position: fixed;
+  background-size: 120%;
+  z-index: -1;
+}
+
+.preload-img{
+    display:none;
+}
+
+
+
+.recipe-wrapper{
+    height:500px;
+   
+}
+
+.recipe{
+    display:none;
+    text-align:center;
+    margin:auto 10px;
+    padding-top: 300px;
+    color:white;
+    font-size: 45px;
+}
+
+.blank-wrapper{
+    height: 100%
+}
+
+
+.salad-name{
+	position: absolute;
+	margin:auto;
+    top: 42%;
+    left:0;
+    visibility: hidden;
+    z-index: 1;
+    color:white;
+    font-size:1.6em;
+    font-weight: bolder;
+  
+
+}
+.item:hover .salad-name{
+	visibility:visible;
+}
+
+h1{
+	font-size: 8px;
+}
